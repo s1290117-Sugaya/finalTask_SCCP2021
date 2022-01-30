@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+	<div id="main">
+		<h1>ログイン</h1>
+		<div id="input-param">
+			<p>username: <input id="username" type="text"></input></p>
+			<p>password: <input id="password" type="password"></input></p>
+		</div>
+		<p><button id="button" type="button">login</button></p>
+		<script>
+			const button = document.getElementById("button")
+			const username = document.getElementById("username")
+			const password = document.getElementById("password")
+
+			function submit(){
+				if(username.value.length == 0){
+					return
+				}
+				if(username.value.length > 15){
+					alert("usernameを15文字以内で入力してください。")
+					return
+				}
+				if(password.value.length < 6 || password.value.length > 50){
+					alert("passwordを6文字以上50文字以内で入力してください")
+					return
+				}
+
+				fetch("/passwords?name="+username.value+"&pass="+password.value).then(response => {
+					if(response.ok){
+						window.location.replace("./main.html")
+					}else{
+						alert("ログインに失敗しました")
+					}
+				})
+
+			}
+
+			button.addEventListener("click", submit)
+		</script>
+	</div>
+</body>
+</html>

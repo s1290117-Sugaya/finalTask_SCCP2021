@@ -1,0 +1,71 @@
+<html>
+<head>
+</head>
+<body>
+	<div id="main">
+		<h1>ユーザー登録</h1>
+		<div id="input-param">
+			<p><font size="3">username: <input id="username" type="text" placeholder="15文字以内"></input></p>
+			<p><font size="3">displayName: <input id="displayName" type="text" placeholder="50文字以内"></input></p>
+			<br>
+			<p><font size="3">password: <input id="password1" type="password" placeholder="6文字以上50文字以内"></input></p>
+			<p><font size="3">password: <input id="password2" type="password" placeholder="再度入力"></input></p>
+
+		</div>
+		<p><button id="button" type="button">create account</button></p>
+		<br>
+		<br>
+		<a href="./login.html"><font size="1">login</a>
+		<script>
+			const button = document.getElementById("button")
+			const username = document.getElementById("username")
+			const displayName = document.getElementById("displayName")
+			const password1 = document.getElementById("password1")
+			const password2 = document.getElementById("password2")
+
+			function submit(){
+				if(username.value.length == 0 || displayName.value.length == 0){
+					return
+				}
+				if(username.value.length > 15){
+					alert("usernameを15文字以内で入力してください。")
+					return
+				}
+				if(displayName.value.length > 50){
+					alert("displayNameを50文字以内で入力してください")
+					return
+				}
+				if(password1.value.length < 6 || password1.value.length > 50){
+					alert("passwordを6文字以上50文字以内で入力してください")
+					return
+				}
+				if(password1.value !== password2.value){
+					alert("パスワードを再度確認してください")
+					return
+				}
+
+				let data = {
+					"username": username.value,
+					"displayName": displayName.value,
+					"password": password1.value
+				}
+
+				fetch("/users", {
+					method: "POST",
+					headers: {"Content-Type": "application/json"},
+					body: JSON.stringify(data),
+				}).then(response => {
+					if(response.ok){
+						alert("こんにちは"+data.displayName+"さん")
+						window.location.replace("./main.html")
+					}else{
+						alert("ユーザー登録に失敗しました")
+					}
+				})
+			}
+
+			button.addEventListener("click", submit)
+		</script>
+	</div>
+</body>
+</html>

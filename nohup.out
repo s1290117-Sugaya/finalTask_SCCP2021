@@ -1,0 +1,218 @@
+server start
+server start
+server start
+server start
+server start
+node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (C:\ProStu\finalTask\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\ProStu\finalTask\index.js:227:5)
+    at Module._compile (node:internal/modules/cjs/loader:1097:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1357:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v17.3.0
+node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (C:\ProStu\finalTask\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\ProStu\finalTask\index.js:227:5)
+    at Module._compile (node:internal/modules/cjs/loader:1097:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1357:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v17.3.0
+node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (C:\ProStu\finalTask\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\ProStu\finalTask\index.js:227:5)
+    at Module._compile (node:internal/modules/cjs/loader:1097:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1357:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v17.3.0
+server start
+C:\ProStu\finalTask\getTweet.js:14
+			}else if(row == undefined){
+			      ^
+
+ReferenceError: row is not defined
+    at Statement.<anonymous> (C:\ProStu\finalTask\getTweet.js:14:10)
+
+Node.js v17.3.0
+server start
+node:events:368
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1330:16)
+    at listenInCluster (node:net:1378:12)
+    at Server.listen (node:net:1465:7)
+    at Function.listen (C:\ProStu\finalTask\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\ProStu\finalTask\index.js:227:5)
+    at Module._compile (node:internal/modules/cjs/loader:1097:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1149:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1357:8)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v17.3.0
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+server start
+[Error: SQLITE_ERROR: near "JOIN": syntax error] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+server start
+[Error: SQLITE_RANGE: column index out of range] {
+  errno: 25,
+  code: 'SQLITE_RANGE'
+}
+server start
+[Error: SQLITE_ERROR: ambiguous column name: id] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+server start
+[Error: SQLITE_ERROR: near "JOIN": syntax error] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+server start
+[Error: SQLITE_ERROR: near "JOIN": syntax error] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+server start
+server start
+server start
+server start
+server start
+C:\ProStu\finalTask\getTweets.js:17
+						id: row.tweets.id,
+						               ^
+
+TypeError: Cannot read properties of undefined (reading 'id')
+    at C:\ProStu\finalTask\getTweets.js:17:22
+    at Array.map (<anonymous>)
+    at Statement.<anonymous> (C:\ProStu\finalTask\getTweets.js:15:25)
+
+Node.js v17.3.0
+server start
+server start
+server start
+server start
+server start
+C:\ProStu\finalTask\index.js:60
+							res.statusCode = 200
+							               ^
+
+TypeError: Cannot set properties of undefined (setting 'statusCode')
+    at C:\ProStu\finalTask\index.js:60:23
+    at Statement.<anonymous> (C:\ProStu\finalTask\setPassword.js:17:5)
+
+Node.js v17.3.0
+server start
+C:\ProStu\finalTask\index.js:60
+							res.statusCode = 200
+							               ^
+
+TypeError: Cannot set properties of undefined (setting 'statusCode')
+    at C:\ProStu\finalTask\index.js:60:23
+    at Statement.<anonymous> (C:\ProStu\finalTask\setPassword.js:17:5)
+
+Node.js v17.3.0
+server start
+C:\ProStu\finalTask\index.js:60
+							res.statusCode = 200
+							               ^
+
+TypeError: Cannot set properties of undefined (setting 'statusCode')
+    at C:\ProStu\finalTask\index.js:60:23
+    at Statement.<anonymous> (C:\ProStu\finalTask\setPassword.js:17:5)
+
+Node.js v17.3.0
+server start
+C:\ProStu\finalTask\index.js:60
+							res.statusCode = 200
+							               ^
+
+TypeError: Cannot set properties of undefined (setting 'statusCode')
+    at C:\ProStu\finalTask\index.js:60:23
+    at Statement.<anonymous> (C:\ProStu\finalTask\setPassword.js:17:5)
+
+Node.js v17.3.0
+server start
+server start
+server start
+server start

@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div id="main">
+		<h1>ユーザー情報</h1>
+		<p>id:<div id="id"></div></p>
+		<p>username:<div id="username"></div></p>
+		<p>displayName<div id="displayName"></div></p>
+		<br>
+		<textarea id="textarea" cols="50" rows="15" placeholder="280文字以内"></textarea>
+		<button id="tweetButton">tweet</button>
+		<br>
+		<h1>ツイート</h1>
+	</div>
+		<script>
+			const id = document.getElementById("id")
+			const username = document.getElementById("username")
+			const displayName = document.getElementById("displayName")
+			const textarea = document.getElementById("textarea")
+			const tweetButton = document.getElementById("tweetButton")
+
+			fetch("/current").then(response => {
+				return response.json()
+			}).then(data => {
+				username.textContent = data.current
+				fetch("/users/"+username.textContent).then(response => {
+					return response.json()
+				}).then(data => {
+					id.textContent = data.id
+					displayName.textContent = data.displayName
+				})
+			})
+
+			fetch("/tweets").then(response => {
+				return response.json()
+			}).then(data => {
+				for(let i=0; i<data.length; i++){
+					const tweet = document.createElement("p")
+					tweet.textContent = "id: "+data[i].id+", username: "+data[i].username+", displayName: "+data[i].displayName+", content: "+data[i].content
+					main.appendChild(tweet)
+				}
+			})
+
+			function tweet(){
+				var data = {
+					userId: id.textContent,
+					content: textarea.value
+				}
+				fetch("/tweets", {
+					method: "POST",
+					headers: {"Content-Type": "application/json"},
+					body: JSON.stringify(data),
+				}).then(response => {
+					if(response.ok){
+						window.location.reload()
+					}else{
+						alert("ツイートに失敗しました")
+					}
+				})
+			}
+
+			tweetButton.addEventListener("click", tweet)
+		</script>
+	</div>
+</body>
+</html>
